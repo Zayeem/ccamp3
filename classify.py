@@ -49,7 +49,7 @@ def get_dataset(dataset_name, model_name):
         train_dataset = dsets.MNIST(root='./data',
                             train=True,
                             transform=trans,
-                            download=False)
+                            download=True)
 
         test_dataset = dsets.MNIST(root='./data',
                                 train=False,
@@ -58,7 +58,7 @@ def get_dataset(dataset_name, model_name):
         train_dataset = dsets.KMNIST(root='./data',
                             train=True,
                             transform=trans,
-                            download=False)
+                            download=True)
 
         test_dataset = dsets.KMNIST(root='./data',
                                 train=False,
