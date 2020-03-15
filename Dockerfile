@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 RUN python --version
 ENV DATASET=mnist
 ENV TYPE=ff
-CMD["python3","classify.py"]
+CMD ["python","./classify.py"]
